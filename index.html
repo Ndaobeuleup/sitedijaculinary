@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast FOOD SITE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="">
+            <h1>Dija<span>Culinary</span></h1>
+        </div>
+        <div class="menu_number">
+            <ul class="menu">
+                <li><a href="#home">Acceuil</a></li>
+                <li><a href="#recettes">Recettes</a></li>
+                <li><a href="#inscrire">S'inscrire</a></li>
+            </ul>
+        
+        </div>
+        <!-- responsive menu -->
+        <div class="menu_toggle"></div>
+    </header>
+
+    
+<div class="banner">
+    <h1>"Bienvenue sur Dija Culinary !</h1>
+    <p> Découvrez des recettes savoureuses et des astuces culinaires pour améliorer vos compétences en cuisine.</p>
+       <p>Explorez notre sélection de recettes nationales et trouvez l'inspiration pour votre prochain repas.</p> 
+        <p>Rejoignez notre communauté de passionnés de cuisine et partagez vos propres recettes, astuces et histoires culinaires."</p>
+</div>
+
+<section class="info-statistics">
+    <P>                                                                        
+     <span>"Bienvenue sur Dija Culinary !</span> <br>
+     Découvrez des recettes savoureuses et des astuces culinaires pour améliorer vos compétences en cuisine.
+     Explorez notre sélection de recettes nationales et trouvez l'inspiration pour votre prochain repas.
+     Rejoignez notre communauté de passionnés de cuisine et partagez vos propres recettes, astuces et histoires culinaires."</P>
+ </section>
+
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="site_desc">
+            <div class="left">
+                <h1>Commander de la nourriture dans nos restaurants près de chez vous.</h1>
+                <div class="left_button">
+                    <a href="#">Voir nos Recettes </a>
+                    <a href="#">Apprendre Plus <img src="images/next.png" alt=""></a>
+                </div>
+            </div>
+            <div class="right">
+                <video controls="controls">
+                    <source src="images/vidéo.mp4">
+                </video>
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="meal" id="recettes">
+        <div class="top">
+            <h1>Voir Nos Recettes</h1>
+            <p>"Trouvez des recettes saines et équilibrées pour maintenir un mode de vie sain et actif sur Dija Culinary."</p>
+          
+        </div>
+
+        <div class="bottom">
+            <div class="box">
+                <img src="images/desert patisserie.jpg">
+                <h4>Desserts & Patisseries</h4>
+                <button><a href="#inscrire">Enregistrer</a></button>
+            </div>
+            <div class="box">
+                <img src="images/salade1.jpg">
+                <h4>Salades & Plats</h4>
+                <button><a href="#inscrire">Enregistrer</a></button>
+            </div>
+            <div class="box">
+                <img src="images/smoothies.jpg">
+                <h4>Boissons & Cocktails</h4>
+                <button><a href="#inscrire">Enregistrer</a></button>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <section class="services" id="recettes">
+        <div class="left">
+            <h2>Nous faissons tous types de Plats avec de meilleurs ingrédients</h2>
+            <p class="text">Notre mission est de vous aider à faire de la cuisine à la maison une expérience amusante et gratifiante. Découvrez nos astuces pour améliorer vos compétences culinaires.</p>
+            <div class="service"><img src="images/check.png"> <p>Cuisine Africaine</p></div>
+            <div class="service"><img src="images/check.png"> <p>Cuisine Asiatique </p></div>
+            <div class="service"><img src="images/check.png"> <p>Cuisine Chinoise</p></div>
+            <button><a href="#"> Savoir Plus <img src="images/next_white.png"></a></button>
+        </div>
+        <div class="right">
+            <img src="images/thiep yap.jpg" alt="">
+        </div>
+    </section>
+<section id="inscrire">
+    <form id="signup-form">
+        <label for="full-name">Nom complet :</label>
+        <input type="text" id="full-name" name="full-name" required>
+        
+        <label for="email">Adresse e-mail :</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="confirm-password">Confirmez votre mot de passe :</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        
+        <label>
+          <input type="checkbox" id="newsletter" name="newsletter" checked>
+          Abonnez-vous à notre newsletter pour recevoir des recettes et des astuces culinaires exclusives
+        </label>
+        
+        <label>
+          <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required>
+          J'accepte les conditions d'utilisation et la politique de confidentialité
+        </label>
+        
+        <button type="submit" id="signup-button">Inscription</button>
+      </form>
+</section>
+
+    <footer >
+        <p> Copyright ©2021-2022 | FaizDev </p>
+        <p>Adresse: Cité Alioune Sow</p>
+        <p>Téléphone: +221 33 874 27 09</p>
+        <p>Email: ndaokhady98@gmail.com</p>
+    </footer>
+
+
+
+    <script>
+        
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu =  document.querySelector('.menu')
+        menu_toggle.onclick = function(){
+             menu_toggle.classList.toggle('active');
+             menu.classList.toggle('responsive');
+        }
+const form = document.getElementById('signup-form');
+const fullNameInput = document.getElementById('full-name');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+const confirmPasswordInput = document.getElementById('confirm-password');
+const newsletterInput = document.getElementById('newsletter');
+const termsAndConditionsInput = document.getElementById('terms-and-conditions');
+const signupButton = document.getElementById('signup-button');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  // Code de validation et de soumission du formulaire
+});
+
+
+    </script>
+</body>
+</html>
